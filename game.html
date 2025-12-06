@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .question-card { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
+        .options button { display: block; width: 100%; padding: 10px; margin: 5px 0; cursor: pointer; border: 1px solid #007bff; background-color: white; color: #007bff; border-radius: 3px; }
+        .options button:hover { background-color: #007bff; color: white; }
+        #results { text-align: center; margin-top: 30px; font-size: 1.2em; font-weight: bold; }
+        .correct { background-color: #28a745 !important; color: white !important; border-color: #28a745 !important; }
+        .incorrect { background-color: #dc3545 !important; color: white !important; border-color: #dc3545 !important; }
+    </style>
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <h1> Quiz Game</h1>
+    <div id="game-container">
+        </div>
+    <div id="results" style="display:none;"></div>
+    <button id="submit-quiz" style="display:none; width: 100%; padding: 15px; font-size: 1.1em;">Submit Quiz</button>
+</body>
+</html>
